@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill Split</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="input container">
+        <p>Bill</p>
+        <div class="amount">
+          <span>$</span>
+          <input type="number" />
+        </div>
+
+        <p>Select Tip</p>
+        <div class="select-tip">
+          <button class="tip-percent active">5%</button>
+          <button class="tip-percent active">10 %</button>
+          <button class="tip-percent active">15%</button>
+          <button class="tip-percent active">25%</button>
+          <button class="tip-percent active">50%</button>
+          <button class="tip-percent active">75%</button>
+        </div>
+
+        <input
+          type="number"
+          class="gray-input"
+          id="custom-type"
+          placeholder="Custom Tip"
+        />
+
+        <div class="number-people">
+          <p>Number Of People</p>
+          <input
+            type="number"
+            class="gray-input"
+            id="no-of-people"
+            placeholder="No of people"
+          />
+        </div>
+
+        <button class="generate-bill">Generate Bill</button>
+      </div>
+
+      <div class="output container">
+        <div class="tip-amount">
+          <p>Tip amount</p>
+          <span></span>
+        </div>
+        <div class="tip-amount">
+          <p>Tip amount</p>
+          <span></span>
+        </div>
+        <div class="tip-amount">
+          <p>Tip amount</p>
+          <span></span>
+        </div>
+        <button class="reset">Reset</button>
+      </div>
+    </main>
+  </body>
+</html>
